@@ -21,6 +21,7 @@ This allows you to get the check/notification on a 0mq without polling nagios al
 ## Configuration
 Add the broker module to your `nagios.cfg`.
 
+    event_broker_options=-1 # Yes that's -1
     broker_module=/var/lib/nagios3/nagios-zmq.o
 
 * Subscribe to outgoing messages on port 6666.
